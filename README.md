@@ -27,17 +27,22 @@ Referred Tutorial Link - https://hub.packtpub.com/building-an-android-app-using-
 
 Open up the app module’s build.gradle file and update the dependencies to include the Mobile Vision APIs:
 
+```
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     implementation 'com.google.android.gms:play-services-vision:11.0.4'
     ...
 }
+```
 
 Now, update your AndroidManifest.xml to include meta data for the faces API:
+
+```
 <meta-data
  android:name="com.google.android.gms.vision.DEPENDENCIES"
  android:value="face" />
+ ```
 
 
 --------------------------------------------------------------------------------------------------------------------------------
